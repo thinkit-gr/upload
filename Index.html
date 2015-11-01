@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="sas" content="?sv=2015-04-05&sr=c&sig=7tYaCUgB9pEIAgZqC%2BQrdq9LjGY2wC5jXSFBzldv6fs%3D&se=2016-10-31T18%3A21%3A14Z&sp=w" />
+    <meta name="containerUrl" content="http://msabotstd.blob.core.windows.net/uploads" />
+    <link href="Loader.css" rel="stylesheet" />
+</head>
+<body class="waitForIt uploader">
+    <div id="LoaderOverlay"></div>
+    <div class="container main">
+        <div class="page-header">
+            <h1>Easy to use uploading service</h1>
+        </div>
+        <div class="alert alert-danger" role="alert"></div>
+        <div class="panel panel-default">
+            <div class="panel-heading"><strong>Upload Files</strong></div>
+            <div class="panel-body">
+                <!-- Standar Form -->
+                <h4>Select files from your computer</h4>
+                <form>
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <input type="file" name="files[]" id="fileControl" multiple>
+                        </div>
+                        <button class="btn btn-sm btn-primary" id="btnUpload">
+                            <span class="glyphicon glyphicon-upload" aria-hidden="true"></span> Upload files
+                        </button>
+                    </div>
+                </form>
+                <!-- Progress Bar -->
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                        0% Complete
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/><br/>
+        <div class="panel panel-default">
+            <div class="panel-heading">Uploaded files</div>
+            <ul class="list-group" id="fileList">
+                <li class="list-group-item loading"></li>
+            </ul>
+        </div>
+    </div>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="UploadBlobs.js"></script>
+    <script src="UploadFilesToAzure.js"></script>
+</body>
+</html>
