@@ -12,9 +12,12 @@
         $("#alert").hide();
         $(".progress").show();
         setPercent(0);
-
-        var up = new Uploader();
-        up.upload(file, url, setPercent, successCb, errorCb);
+        try{
+          var up = new Uploader();
+          up.upload(file, url, setPercent, successCb, errorCb);
+        }catch(ex){
+          errorCb("Your browser doesn't support file upload", ex);
+        }
 
 
         //var xhr = new XMLHttpRequest();
