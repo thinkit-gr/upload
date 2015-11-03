@@ -108,7 +108,7 @@ var UpZure;
                     type: "PUT",
                     data: requestBody,
                     beforeSend: function (xhr) {
-                        xhr.setRequestHeader('x-ms-blob-content-type', this.file.type);
+                        xhr.setRequestHeader('x-ms-blob-content-type', _this.file.type);
                         xhr.setRequestHeader('Content-Length', '' + requestBody.length);
                     },
                     success: function (data, status) {
