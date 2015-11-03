@@ -1,10 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title></title>
     <meta charset="utf-8" />
     <meta name="sas" content="?sv=2015-04-05&sr=c&sig=7tYaCUgB9pEIAgZqC%2BQrdq9LjGY2wC5jXSFBzldv6fs%3D&se=2016-10-31T18%3A21%3A14Z&sp=w" />
     <meta name="containerUrl" content="http://msabotstd.blob.core.windows.net/uploads" />
+    <link href="css/loader.css" rel="stylesheet" />
     <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
@@ -14,7 +15,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -22,7 +23,6 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link href="Loader.css" rel="stylesheet" />
 </head>
 <body class="waitForIt uploader">
     <div id="LoaderOverlay"></div>
@@ -54,7 +54,7 @@
                 </div>
             </div>
         </div>
-        <br/><br/>
+        <br /><br />
         <div class="panel panel-default">
             <div class="panel-heading">Uploaded files</div>
             <ul class="list-group" id="fileList">
@@ -63,8 +63,8 @@
         </div>
     </div>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="UploadBlobs.js"></script>
-    <script src="UploadFilesToAzure.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="app/blobuploader.js"></script>
+    <script src="app/app.js"></script>
 </body>
 </html>
